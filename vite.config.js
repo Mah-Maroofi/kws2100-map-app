@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/kws2100-map-app/', // VIKTIG for GitHub Pages
+  base: '/kws2100-map-app/',
+  build: {
+    outDir: 'dist', 
+  },
 });
